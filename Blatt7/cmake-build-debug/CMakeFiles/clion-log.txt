@@ -1,0 +1,3 @@
+C:\Users\Duc\.CLion2017.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "\"C:/Users/Duc/Documents/Universitäre Dokumente/3 Semester/Algorithmen und Datenstrukturen/blatt-7-aufgabe-1-asians_never_die/Blatt7\""
+CMake Error: The source directory "/cygdrive/c/Users/Duc/Documents/UniversitÃ¤re Dokumente/3 Semester/Algorithmen und Datenstrukturen/blatt-7-aufgabe-1-asians_never_die/Blatt7/cmake-build-debug/"/"C:/Users/Duc/Documents/UniversitÃ¤re Dokumente/3 Semester/Algorithmen und Datenstrukturen/blatt-7-aufgabe-1-asians_never_die/Blatt7/""" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.

@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+                sh 'rm -rf build'
+                sh 'mkdir build'
+                sh 'cd build && cmake ..'
+                sh 'cd build && make'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+                sh 'cd build && make test'
+            }
+        }
+    }
+}
