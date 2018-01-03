@@ -41,4 +41,4 @@ add_subdirectory(test)
 
 enable_testing()
 
-add_test(AVLTree test/testAvl --gtest_output=xml:report.xml)
+add_test(AVLTest test/testAvl --gtest_output=xml:report.xml)
