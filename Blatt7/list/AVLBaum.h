@@ -10,6 +10,19 @@ class AVLBaum;
 class AVLBaum {
 
 private:
+    struct element {
+
+        const int value;
+        element *leftLeaf = nullptr;
+        element *rightLeaf = nullptr;
+        element *previousLeaf = nullptr;
+        int balance = 0;
+
+        bool hasLeaf() const;
+
+        bool isBalanced() const;
+
+    };
 
 public:
 
