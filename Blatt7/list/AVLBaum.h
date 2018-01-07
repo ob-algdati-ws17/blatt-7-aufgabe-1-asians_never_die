@@ -12,6 +12,9 @@ class AVLBaum {
 private:
     struct element {
 
+        element(const int value, element *hisRoot);
+        element(const int value, element *right, element *left, element *previous);
+
         const int value;
         element *leftLeaf = nullptr;
         element *rightLeaf = nullptr;
@@ -24,7 +27,25 @@ private:
 
     };
 
+    element *root = nullptr;
+
+    bool insert(const int value);
+
+    void removeLeafs(element *elem);
+    void removeLeaf(element *elem, bool right);
+    bool removeElement(element *elem);
+
+    element *rechtsrotation(element *elem);
+    element *linksrotation(element *elem);
+
+
 public:
+    ~AVLBaum();
+    bool insert(const int value);
+    bool exists(const int value);
+    bool remove(const int value);
+
+    std::vector<int> *order() const;
 
 };
 
