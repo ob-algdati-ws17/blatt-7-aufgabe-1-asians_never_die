@@ -5,6 +5,12 @@
 #ifndef BLATT7_AVLBAUM_H
 #define BLATT7_AVLBAUM_H
 
+#include <iostream>
+#include <string>
+#include <tuple>
+#include "functional"
+#include "vector"
+
 class AvlTree;
 
 class AvlTree {
@@ -36,6 +42,9 @@ private:
     element *rechtsrotation(element *elem);
     element *linksrotation(element *elem);
 
+    void UpIn(element *elem);
+    void UpOut(element *elem);
+
 
 public:
     ~AvlTree();
@@ -45,7 +54,7 @@ public:
     bool exists(const int value);
     void remove(const int value);
 
-    /*std::vector<int> *order() const;*/
+    std::vector<int> *order() const;
 
 };
 

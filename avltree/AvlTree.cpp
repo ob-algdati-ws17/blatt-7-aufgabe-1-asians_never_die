@@ -2,11 +2,6 @@
 // Created by Duc adn Raphi on 03.01.2018.
 //
 #include "AvlTree.h";
-#include <iostream>
-#include <string>
-#include <tuple>
-#include "functional"
-#include "vector"
 
 AvlTree::~AvlTree () {
     root = nullptr;
@@ -66,7 +61,7 @@ void AvlTree::insert(const int value, element *toInsert) {
             current->balance -= 1;
         } else {
             current->rightLeaf = new element(value,current->previousLeaf);
-            current->balance -= 1;
+            current->balance += 1;
         }
     } else if(value < current->value) {
         if(current->leftLeaf = nullptr) {
@@ -86,14 +81,18 @@ void AvlTree::insert(const int value, element *toInsert) {
 }
 
 void AvlTree::removeElement(const int value, element *toRemove) {
-    if(~(toRemove->hasLeaf())) {
+    if(!(toRemove->hasLeaf())) {
         return;
     }
+    //damit noch arbeiten
+    auto balance = toRemove->balance;
     if(toRemove->leftLeaf->value == value && ~toRemove->leftLeaf->hasLeaf()) {
         toRemove->leftLeaf = nullptr;
+        toRemove->balance += 1;
         return;
     } else if (toRemove->rightLeaf->value == value && ~toRemove->rightLeaf->hasLeaf()){
         toRemove->rightLeaf = nullptr;
+        toRemove->balance -= 1;
         return;
     } else if (toRemove->leftLeaf->value < value) {
         removeElement(value, toRemove->leftLeaf);
@@ -109,10 +108,41 @@ void AvlTree::removeLeafs(element *elem) {
 }
 
 AvlTree::element *AvlTree::rechtsrotation(element *elem) {
+    auto previous = elem->previousLeaf;
+    auto head = elem->leftLeaf;
+    auto extra = elem->rightLeaf;
 
+    if(previous==nullptr) {
+        root = head;
+        head->previousLeaf=nullptr;
+    } else {
+        head->previousLeaf = elem->previousLeaf->previousLeaf;
+        head->rightLeaf = previous;
+        previous->leftLeaf = extra;
+    }
+
+    //nochmal nachgucken
+    head->balance += 1;
+    head->rightLeaf->balance += 1;
+    return head;
 }
 
 AvlTree::element *AvlTree::linksrotation(element *elem) {
+    auto previous = elem->previousLeaf;
+    auto head = elem->rightLeaf;
+    auto extra = elem->leftLeaf;
+
+    if(previous==nullptr) {
+        root = head;
+        head->previousLeaf = nullptr;
+    } else {
+        head->previousLeaf = elem->previousLeaf->previousLeaf;
+        head->leftLeaf = previous;
+        previous->rightLeaf = extra;
+    }
+    head->balance -= 1;
+    head->leftLeaf->balance -= 1;
+    return head;
 }
 
 bool AvlTree::isEmpty() {
@@ -149,9 +179,17 @@ void AvlTree::remove(const int value) {
     removeElement(value, root);
 }
 
-/*std::vector<int> AvlTree::*order() const {
+void AvlTree::UpIn(element *elem) {
 
-}*/
+}
+
+void AvlTree::UpOut(element *elem) {
+
+}
+
+std::vector<int> *AvlTree::order() const {
+
+}
 
 
 
