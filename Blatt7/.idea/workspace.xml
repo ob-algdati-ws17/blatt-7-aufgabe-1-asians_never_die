@@ -23,8 +23,8 @@
       <file leaf-file-name="AVLBaum.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/list/AVLBaum.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1850">
-              <caret line="74" column="4" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+            <state relative-caret-position="461">
+              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -191,12 +191,12 @@
       <updated>1514990779036</updated>
       <workItem from="1514990782556" duration="1307000" />
       <workItem from="1515244704940" duration="1010000" />
-      <workItem from="1515357664894" duration="2197000" />
+      <workItem from="1515357664894" duration="2279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4514000" />
+    <option name="totallyTimeSpent" value="4596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -347,8 +347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/list/AVLBaum.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1850">
-          <caret line="74" column="4" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+        <state relative-caret-position="461">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>

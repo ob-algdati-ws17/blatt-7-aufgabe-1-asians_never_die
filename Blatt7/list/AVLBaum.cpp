@@ -72,7 +72,7 @@ bool AVLBaum::remove(const int value) {
 }
 
 std::vector<int> AVLBaum::*order() const {
-    
+
 }
 
 

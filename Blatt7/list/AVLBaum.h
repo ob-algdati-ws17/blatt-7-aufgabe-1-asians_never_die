@@ -29,7 +29,7 @@ private:
 
     element *root = nullptr;
 
-    bool insert(const int value);
+    bool insertLeaf(const int value);
 
     void removeLeafs(element *elem);
     void removeLeaf(element *elem, bool right);

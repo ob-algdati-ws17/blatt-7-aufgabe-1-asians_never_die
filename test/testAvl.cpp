@@ -4,10 +4,19 @@
 
 #include "testAvl.h"
 #include <memory>
+#include "AvlTree"
 
 using namespace std;
 
-/*TEST(AVLTest, First_Test) {
-int test = 1;
-EXPECT_EQ(1, test);
-}*/
+TEST(AVLTest, insertINTOemptyTREE_Test) {
+    AvlTree tree;
+    tree.insert(4);
+    EXPECT_TRUE(tree.isEmpty());
+}
+
+TEST(AVLTest, Remove_Test) {
+    AvlTree tree;
+    tree.insert(4);
+    tree.remove(4);
+    EXPECT_TRUE(tree.isEmpty());
+}
