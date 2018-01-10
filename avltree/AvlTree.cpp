@@ -2,6 +2,7 @@
 // Created by Duc adn Raphi on 03.01.2018.
 //
 #include "AvlTree.h";
+#include "functional";
 
 AvlTree::~AvlTree () {
     root = nullptr;
@@ -179,16 +180,107 @@ void AvlTree::remove(const int value) {
     removeElement(value, root);
 }
 
-void AvlTree::UpIn(element *elem) {
 
+std::vector<int> *AvlTree::preorder() const {
+    if (root == nullptr)
+        return nullptr;
+    return root->preorder();
 }
 
-void AvlTree::UpOut(element *elem) {
-
+std::vector<int> *AvlTree::element::preorder() const {
+    auto vec = new std::vector<int>();
+    // Wurzel in vec
+    vec->push_back(value);
+    // linken Nachfolger in vec
+    if (leftLeaf != nullptr) {
+        auto left_vec = leftLeaf->preorder();
+        vec->insert(vec->end(), left_vec->begin(), left_vec->end());
+    }
+    // rechten Nachfolger in vec
+    if (rightLeaf != nullptr) {
+        auto right_vec = rightLeaf->preorder();
+        vec->insert(vec->end(), right_vec->begin(), right_vec->end());
+    }
+    return vec;
 }
 
-std::vector<int> *AvlTree::order() const {
+std::vector<int> *AvlTree::inorder() const {
+    if (root == nullptr)
+        return nullptr;
+    return root->inorder();
+}
 
+std::vector<int> *AvlTree::element::inorder() const {
+    auto vec = new std::vector<int>();
+    // linken Nachfolger in vec
+    if (leftLeaf != nullptr) {
+        auto left_vec = leftLeaf->inorder();
+        vec->insert(vec->end(), left_vec->begin(), left_vec->end());
+    }
+    // Wurzel in vec
+    vec->push_back(value);
+    // rechten Nachfolger in vec
+    if (rightLeaf != nullptr) {
+        auto right_vec = rightLeaf->inorder();
+        vec->insert(vec->end(), right_vec->begin(), right_vec->end());
+    }
+    return vec;
+}
+
+std::vector<int> *AvlTree::postorder() const {
+    if (root == nullptr)
+        return nullptr;
+    return root->postorder();
+}
+
+std::vector<int> *AvlTree::element::postorder() const {
+    auto vec = new std::vector<int>();
+    // linken Nachfolger in vec
+    if (leftLeaf != nullptr) {
+        auto left_vec = leftLeaf->postorder();
+        vec->insert(vec->end(), left_vec->begin(), left_vec->end());
+    }
+    // rechten Nachfolger in vec
+    if (rightLeaf != nullptr) {
+        auto right_vec = rightLeaf->postorder();
+        vec->insert(vec->end(), right_vec->begin(), right_vec->end());
+    }
+    // Wurzel in vec
+    vec->push_back(value);
+    return vec;
+}
+
+/********************************************************************
+ * operator<<
+ *******************************************************************/
+std::ostream &operator<<(std::ostream &os, const AvlTree &tree) {
+    std::function<void(std::ostream &, const int, const AvlTree::element *, const std::string)> printToOs
+            = [&](std::ostream &os, const int value, const AvlTree::element *node, const std::string l) {
+
+                static int nullcount = 0;
+
+                if (node == nullptr) {
+                    os << "    null" << nullcount << "[shape=point];" << std::endl;
+                    os << "    " << value << " -> null" << nullcount
+                       << " [label=\"" << l << "\"];" << std::endl;
+                    nullcount++;
+                } else {
+                    os << "    " << value << " -> " << node->value
+                       << " [label=\"" << l << "\"];" << std::endl;
+
+                    printToOs(os, node->value, node->leftLeaf, "l");
+                    printToOs(os, node->value, node->rightLeaf, "r");
+                }
+            };
+    os << "digraph tree {" << std::endl;
+    if (tree.root == nullptr) {
+        os << "    null " << "[shape=point];" << std::endl;
+    } else {
+        printToOs(os, tree.root->value, tree.root->leftLeaf, "l");
+        printToOs(os, tree.root->value, tree.root->rightLeaf, "r");
+    }
+    os << "}" << std::endl;
+    return os;
 }
 
 

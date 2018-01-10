@@ -31,9 +31,14 @@ private:
 
         bool isBalanced() const;
 
+        std::vector<int> *inorder() const;
+
+        std::vector<int> *preorder() const;
+
+        std::vector<int> *postorder() const;
+
     };
 
-    element *root = nullptr;
 
     void removeLeafs(element *elem);
     void removeElement(const int value, element *toRemove);
@@ -42,19 +47,20 @@ private:
     element *rechtsrotation(element *elem);
     element *linksrotation(element *elem);
 
-    void UpIn(element *elem);
-    void UpOut(element *elem);
-
-
 public:
+
+    element *root = nullptr;
     ~AvlTree();
     bool isEmpty();
     void insert(const int value);
     void insert(const int value, element *toInsert);
     bool exists(const int value);
     void remove(const int value);
+    std::vector<int> *inorder() const;
 
-    std::vector<int> *order() const;
+    std::vector<int> *preorder() const;
+
+    std::vector<int> *postorder() const;
 
 };
 
