@@ -56,6 +56,7 @@ public:
     void insert(const int value, element *toInsert);
     bool exists(const int value);
     void remove(const int value);
+
     std::vector<int> *inorder() const;
 
     std::vector<int> *preorder() const;

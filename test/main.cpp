@@ -1,7 +1,6 @@
 //
-// Created by Duc on 10.01.2018.
+// Created by Duc on 11.01.2018.
 //
-
 #include "gtest/gtest.h"
 
 int main(int argc, char **argv) {
