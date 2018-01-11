@@ -57,28 +57,28 @@ include test/CMakeFiles/testAvl.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/testAvl.dir/flags.make
 
-test/CMakeFiles/testAvl.dir/main.cpp.o: test/CMakeFiles/testAvl.dir/flags.make
-test/CMakeFiles/testAvl.dir/main.cpp.o: ../test/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/testAvl.dir/main.cpp.o"
-	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/test && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testAvl.dir/main.cpp.o -c /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/main.cpp
+test/CMakeFiles/testAvl.dir/Main.cpp.o: test/CMakeFiles/testAvl.dir/flags.make
+test/CMakeFiles/testAvl.dir/Main.cpp.o: ../test/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/testAvl.dir/Main.cpp.o"
+	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/test && /usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testAvl.dir/Main.cpp.o -c /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/Main.cpp
 
-test/CMakeFiles/testAvl.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testAvl.dir/main.cpp.i"
-	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/test && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/main.cpp > CMakeFiles/testAvl.dir/main.cpp.i
+test/CMakeFiles/testAvl.dir/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testAvl.dir/Main.cpp.i"
+	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/test && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/Main.cpp > CMakeFiles/testAvl.dir/Main.cpp.i
 
-test/CMakeFiles/testAvl.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testAvl.dir/main.cpp.s"
-	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/test && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/main.cpp -o CMakeFiles/testAvl.dir/main.cpp.s
+test/CMakeFiles/testAvl.dir/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testAvl.dir/Main.cpp.s"
+	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/test && /usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/Main.cpp -o CMakeFiles/testAvl.dir/Main.cpp.s
 
-test/CMakeFiles/testAvl.dir/main.cpp.o.requires:
+test/CMakeFiles/testAvl.dir/Main.cpp.o.requires:
 
-.PHONY : test/CMakeFiles/testAvl.dir/main.cpp.o.requires
+.PHONY : test/CMakeFiles/testAvl.dir/Main.cpp.o.requires
 
-test/CMakeFiles/testAvl.dir/main.cpp.o.provides: test/CMakeFiles/testAvl.dir/main.cpp.o.requires
-	$(MAKE) -f test/CMakeFiles/testAvl.dir/build.make test/CMakeFiles/testAvl.dir/main.cpp.o.provides.build
-.PHONY : test/CMakeFiles/testAvl.dir/main.cpp.o.provides
+test/CMakeFiles/testAvl.dir/Main.cpp.o.provides: test/CMakeFiles/testAvl.dir/Main.cpp.o.requires
+	$(MAKE) -f test/CMakeFiles/testAvl.dir/build.make test/CMakeFiles/testAvl.dir/Main.cpp.o.provides.build
+.PHONY : test/CMakeFiles/testAvl.dir/Main.cpp.o.provides
 
-test/CMakeFiles/testAvl.dir/main.cpp.o.provides.build: test/CMakeFiles/testAvl.dir/main.cpp.o
+test/CMakeFiles/testAvl.dir/Main.cpp.o.provides.build: test/CMakeFiles/testAvl.dir/Main.cpp.o
 
 
 test/CMakeFiles/testAvl.dir/testAvl.cpp.o: test/CMakeFiles/testAvl.dir/flags.make
@@ -107,13 +107,13 @@ test/CMakeFiles/testAvl.dir/testAvl.cpp.o.provides.build: test/CMakeFiles/testAv
 
 # Object files for target testAvl
 testAvl_OBJECTS = \
-"CMakeFiles/testAvl.dir/main.cpp.o" \
+"CMakeFiles/testAvl.dir/Main.cpp.o" \
 "CMakeFiles/testAvl.dir/testAvl.cpp.o"
 
 # External object files for target testAvl
 testAvl_EXTERNAL_OBJECTS =
 
-test/testAvl.exe: test/CMakeFiles/testAvl.dir/main.cpp.o
+test/testAvl.exe: test/CMakeFiles/testAvl.dir/Main.cpp.o
 test/testAvl.exe: test/CMakeFiles/testAvl.dir/testAvl.cpp.o
 test/testAvl.exe: test/CMakeFiles/testAvl.dir/build.make
 test/testAvl.exe: googletest-build/googlemock/gtest/libgtestd.a
@@ -127,7 +127,7 @@ test/CMakeFiles/testAvl.dir/build: test/testAvl.exe
 
 .PHONY : test/CMakeFiles/testAvl.dir/build
 
-test/CMakeFiles/testAvl.dir/requires: test/CMakeFiles/testAvl.dir/main.cpp.o.requires
+test/CMakeFiles/testAvl.dir/requires: test/CMakeFiles/testAvl.dir/Main.cpp.o.requires
 test/CMakeFiles/testAvl.dir/requires: test/CMakeFiles/testAvl.dir/testAvl.cpp.o.requires
 
 .PHONY : test/CMakeFiles/testAvl.dir/requires

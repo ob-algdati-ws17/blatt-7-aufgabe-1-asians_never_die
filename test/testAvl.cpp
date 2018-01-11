@@ -11,7 +11,7 @@ using namespace std;
 TEST(AVLTest, insertINTOemptyTREE_Test) {
     AvlTree tree;
     tree.insert(4);
-    EXPECT_TRUE(tree.isEmpty());
+    EXPECT_FALSE(tree.isEmpty());
 }
 
 TEST(AVLTest, Remove_Test) {

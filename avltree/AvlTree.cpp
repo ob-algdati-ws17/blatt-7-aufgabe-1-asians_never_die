@@ -1,8 +1,7 @@
 //
 // Created by Duc adn Raphi on 03.01.2018.
 //
-#include "AvlTree.h";
-#include "functional";
+#include "AvlTree.h"
 
 AvlTree::~AvlTree () {
     root = nullptr;
@@ -250,38 +249,6 @@ std::vector<int> *AvlTree::element::postorder() const {
     return vec;
 }
 
-/********************************************************************
- * operator<<
- *******************************************************************/
-std::ostream &operator<<(std::ostream &os, const AvlTree &tree) {
-    std::function<void(std::ostream &, const int, const AvlTree::element *, const std::string)> printToOs
-            = [&](std::ostream &os, const int value, const AvlTree::element *node, const std::string l) {
-
-                static int nullcount = 0;
-
-                if (node == nullptr) {
-                    os << "    null" << nullcount << "[shape=point];" << std::endl;
-                    os << "    " << value << " -> null" << nullcount
-                       << " [label=\"" << l << "\"];" << std::endl;
-                    nullcount++;
-                } else {
-                    os << "    " << value << " -> " << node->value
-                       << " [label=\"" << l << "\"];" << std::endl;
-
-                    printToOs(os, node->value, node->leftLeaf, "l");
-                    printToOs(os, node->value, node->rightLeaf, "r");
-                }
-            };
-    os << "digraph tree {" << std::endl;
-    if (tree.root == nullptr) {
-        os << "    null " << "[shape=point];" << std::endl;
-    } else {
-        printToOs(os, tree.root->value, tree.root->leftLeaf, "l");
-        printToOs(os, tree.root->value, tree.root->rightLeaf, "r");
-    }
-    os << "}" << std::endl;
-    return os;
-}
 
 
 

@@ -437,9 +437,11 @@
 		<Unit filename="/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/googletest-src/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/Main.cpp">
+			<Option target="testAvl"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/main.cpp">
 			<Option target="Main"/>
-			<Option target="testAvl"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/testAvl.cpp">
 			<Option target="testAvl"/>

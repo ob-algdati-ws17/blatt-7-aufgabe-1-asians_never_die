@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/main.cpp
+gtest/gtest.h
+/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/gtest/gtest.h
+

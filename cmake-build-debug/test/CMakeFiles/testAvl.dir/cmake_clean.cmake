@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/testAvl.dir/main.cpp.o"
+  "CMakeFiles/testAvl.dir/Main.cpp.o"
   "CMakeFiles/testAvl.dir/testAvl.cpp.o"
   "testAvl.pdb"
   "testAvl.exe"

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/main.cpp" "/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/test/CMakeFiles/testAvl.dir/main.cpp.o"
+  "/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/Main.cpp" "/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/test/CMakeFiles/testAvl.dir/Main.cpp.o"
   "/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/test/testAvl.cpp" "/cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug/test/CMakeFiles/testAvl.dir/testAvl.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -182,32 +182,32 @@ testAvl/fast:
 	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug && $(MAKE) -f test/CMakeFiles/testAvl.dir/build.make test/CMakeFiles/testAvl.dir/build
 .PHONY : testAvl/fast
 
-main.o: main.cpp.o
+Main.o: Main.cpp.o
 
-.PHONY : main.o
+.PHONY : Main.o
 
 # target to build an object file
-main.cpp.o:
-	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug && $(MAKE) -f test/CMakeFiles/testAvl.dir/build.make test/CMakeFiles/testAvl.dir/main.cpp.o
-.PHONY : main.cpp.o
+Main.cpp.o:
+	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug && $(MAKE) -f test/CMakeFiles/testAvl.dir/build.make test/CMakeFiles/testAvl.dir/Main.cpp.o
+.PHONY : Main.cpp.o
 
-main.i: main.cpp.i
+Main.i: Main.cpp.i
 
-.PHONY : main.i
+.PHONY : Main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug && $(MAKE) -f test/CMakeFiles/testAvl.dir/build.make test/CMakeFiles/testAvl.dir/main.cpp.i
-.PHONY : main.cpp.i
+Main.cpp.i:
+	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug && $(MAKE) -f test/CMakeFiles/testAvl.dir/build.make test/CMakeFiles/testAvl.dir/Main.cpp.i
+.PHONY : Main.cpp.i
 
-main.s: main.cpp.s
+Main.s: Main.cpp.s
 
-.PHONY : main.s
+.PHONY : Main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug && $(MAKE) -f test/CMakeFiles/testAvl.dir/build.make test/CMakeFiles/testAvl.dir/main.cpp.s
-.PHONY : main.cpp.s
+Main.cpp.s:
+	cd /cygdrive/c/Users/Duc/CLionProjects/blatt-7-aufgabe-1-asians_never_die/cmake-build-debug && $(MAKE) -f test/CMakeFiles/testAvl.dir/build.make test/CMakeFiles/testAvl.dir/Main.cpp.s
+.PHONY : Main.cpp.s
 
 testAvl.o: testAvl.cpp.o
 
@@ -250,9 +250,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... testAvl"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Main.o"
+	@echo "... Main.i"
+	@echo "... Main.s"
 	@echo "... testAvl.o"
 	@echo "... testAvl.i"
 	@echo "... testAvl.s"
